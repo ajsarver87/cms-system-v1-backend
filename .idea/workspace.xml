@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b019ec3-9f8f-497e-9f5f-e017fb1514ea" name="Changes" comment="added endpoint to create a user">
+    <list default="true" id="7b019ec3-9f8f-497e-9f5f-e017fb1514ea" name="Changes" comment="finish adding the user create endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/security.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761523213952</updated>
-      <workItem from="1761523215035" duration="10950000" />
+      <workItem from="1761523215035" duration="11391000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -200,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761534812908</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finish adding the user create endpoint">
+      <option name="closed" value="true" />
+      <created>1761536022525</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761536022525</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +232,7 @@
     <MESSAGE value="add database and user model" />
     <MESSAGE value="add startup code to create database tables and modify user model" />
     <MESSAGE value="added endpoint to create a user" />
-    <option name="LAST_COMMIT_MESSAGE" value="added endpoint to create a user" />
+    <MESSAGE value="finish adding the user create endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish adding the user create endpoint" />
   </component>
 </project>
