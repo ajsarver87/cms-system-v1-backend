@@ -1,19 +1,20 @@
 from sqlite3 import IntegrityError
-
+from sqlalchemy.exc import IntegrityError
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlmodel import Session
 from starlette import status
-from ..models import User, UserCreate
+from ..models import User, UserCreate, UserRead
 from ..database import get_session
 from ..security import get_password_hash
+
 
 router = APIRouter(
     prefix="/auth",
 )
 
 # Create a New User
-@router.post("/register/", response_model=UserCreate, status_code=status.HTTP_201_CREATED)
-async def register_new_user(*, session: Session = Depends(get_session()), user_in: UserCreate):
+@router.post("/register/", response_model=UserRead, status_code=status.HTTP_201_CREATED)
+async def register_new_user(*, session: Session = Depends(get_session), user_in: UserCreate):
     """This will register a new user"""
     try:
         # Hash the plain text password

@@ -20,12 +20,9 @@ class User(SQLModel, table=True):
             DateTime(timezone=True), server_default=func.now(), nullable=True
         )
     )
-    updated_at: Optional[datetime] = Field(
-        default=None,
-        sa_column=Column(
-            DateTime(timezone=True), onupdate=func.now(), nullable=True
-        )
-    )
+    updated_at: Optional[datetime] = Field(default=None, sa_column=Column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=True
+    ))
 
 class UserCreate(SQLModel):
     """Model used for user creation"""

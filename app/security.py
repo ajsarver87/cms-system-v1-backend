@@ -1,6 +1,6 @@
-from passlib.context import CryptContext
+from pwdlib import PasswordHash
 
-pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
+pwd_context = PasswordHash.recommended()
 
 def get_password_hash(password: str) -> str:
     """Hashes plain text password"""
