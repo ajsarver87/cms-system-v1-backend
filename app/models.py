@@ -26,3 +26,20 @@ class User(SQLModel, table=True):
             DateTime(timezone=True), onupdate=func.now(), nullable=True
         )
     )
+
+class UserCreate(SQLModel):
+    """Model used for user creation"""
+    username: str
+    email: str
+    password: str
+    first_name: str
+    last_name: str
+
+class UserRead(SQLModel):
+    """Model used for user retrieval"""
+    id: uuid.UUID
+    username: str
+    email: str
+    first_name: str
+    last_name: str
+    is_active: bool
